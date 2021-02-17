@@ -1,8 +1,8 @@
-import { usePageProgress } from '../../use-page-progress';
+import { usePageProgress } from "../../use-page-progress";
 
-import { toCamel } from '../lib/util';
+import { toCamel } from "../lib/util";
 
-import hookConfig from '../../use-page-progress/package.json';
+import hookConfig from "../../use-page-progress/package.json";
 
 export default function Index() {
   const { name, description, repository = {}, author = {} } = hookConfig;
@@ -10,15 +10,12 @@ export default function Index() {
   const { name: authorName, url: authorUrl } = author;
 
   const { url: repositoryUrl } = repository;
-  const repositoryExists = typeof repositoryUrl === 'string';
+  const repositoryExists = typeof repositoryUrl === "string";
 
-  const repositoryUrlDisplay = repositoryExists && repositoryUrl.split('://')[1];
+  const repositoryUrlDisplay =
+    repositoryExists && repositoryUrl.split("://")[1];
 
-  const hookSettings = {
-    message: 'Hello, custom hook!'
-  }
-
-  const { message } = usePageProgress(hookSettings);
+  const { scrollPercentage } = usePageProgress();
 
   return (
     <main>
@@ -34,6 +31,7 @@ export default function Index() {
           flex-direction: column;
           justify-content: space-between;
           padding: 1em 0;
+          height: 2000px;
         }
 
         h1 {
@@ -59,34 +57,47 @@ export default function Index() {
         }
 
         footer p {
-          font-size: .9em;
+          font-size: 0.9em;
         }
 
         footer p,
         footer a {
           color: #546e7a;
         }
+
+        .percentage {
+          position: fixed;
+          background: gray;
+          top: 0;
+          left: 0;
+        }
       `}</style>
 
       <section>
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            background: "gray",
+            width: `${scrollPercentage}%`,
+          }}
+        >
+          {scrollPercentage}%
+        </div>
+        {scrollPercentage === 20 && <h1>{toCamel(name)}</h1>}
 
-        <h1>{ toCamel(name) }</h1>
+        <p>{description}</p>
 
-        <p>{ description }</p>
-
-        { repositoryExists && (
+        {repositoryExists && (
           <p>
-            <a href={repositoryUrl}>
-              { repositoryUrlDisplay }
-            </a>
+            <a href={repositoryUrl}>{repositoryUrlDisplay}</a>
           </p>
         )}
 
         <h2>How to use</h2>
 
-        <p>
-          Add your instructions here!
-        </p>
+        <p>Add your instructions here!</p>
 
         <h2>Examples</h2>
 
@@ -96,7 +107,7 @@ export default function Index() {
         </p>
         <pre>
           <code>
-{`const hookSettings = {
+            {`const hookSettings = {
   message: 'Hello, custom hook!'
 }
 
@@ -106,17 +117,15 @@ const { message } = usePageProgress(hookSettings);`}
         <p>
           <strong>Output:</strong>
         </p>
-        <p>
-          { message }
-        </p>
+        <p></p>
+        {scrollPercentage >= 20 && <h1>{toCamel(name)}</h1>}
       </section>
 
       <footer>
         <p>
-          Made by <a href={authorUrl}>{ authorName }</a>
+          Made by <a href={authorUrl}>{authorName}</a>
         </p>
       </footer>
     </main>
   );
-
 }

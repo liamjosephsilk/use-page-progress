@@ -4,8 +4,8 @@
   "description": "A starter for creating a new React hook",
   "author": {
     "name": "Liam Silk",
-    "email": "hello@colbyfayock.com",
-    "url": "https://twitter.com/colbyfayock"
+    "email": "liamjosephsilk@gmail.com",
+    "url": "https://twitter.com/liam_silk"
   },
   "keywords": [
     "react",
@@ -26,13 +26,18 @@
     "@babel/core": "^7.12.13",
     "@babel/preset-env": "^7.12.13",
     "@babel/preset-react": "^7.12.13",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/use-page-progress"
+    "url": "https://github.com/liamjosephsilk/use-page-progress"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/use-page-progress/issues"
+    "url": "https://github.com/liamjosephsilk/use-page-progress/issues"
+  },
+  "peerDependencies": {
+    
   }
 }

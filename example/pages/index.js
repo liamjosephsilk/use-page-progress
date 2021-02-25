@@ -31,7 +31,6 @@ export default function Index() {
           flex-direction: column;
           justify-content: space-between;
           padding: 1em 0;
-          height: 2000px;
         }
 
         h1 {
@@ -86,32 +85,35 @@ export default function Index() {
           {scrollPercentage}%
         </div>
         {scrollPercentage === 20 && <h1>{toCamel(name)}</h1>}
-
         <p>{description}</p>
-
         {repositoryExists && (
           <p>
             <a href={repositoryUrl}>{repositoryUrlDisplay}</a>
           </p>
         )}
-
         <h2>How to use</h2>
-
-        <p>Add your instructions here!</p>
-
+        <p>Install</p>
+        <pre>
+          <code>{`npm i use-page-progress`}</code>
+        </pre>
         <h2>Examples</h2>
-
-        <h3>Set and grab message</h3>
-        <p>
-          <strong>Input:</strong>
-        </p>
+        <h3>Get the percentage and create a progress bar</h3>
         <pre>
           <code>
-            {`const hookSettings = {
-  message: 'Hello, custom hook!'
-}
+            {`
+import React from 'react'
+import {usePageProgress} from 'use-page-progress';
 
-const { message } = usePageProgress(hookSettings);`}
+export default function Page() {
+  const {scrollPercentage} = usePageProgress()
+  return (
+    <div>
+    <div style={{position: 'fixed', top: 0, left: 0, width: '${scrollPercentage}%'}}></div>
+    // Page content
+    </div>
+  )
+              
+}`}
           </code>
         </pre>
         <p>

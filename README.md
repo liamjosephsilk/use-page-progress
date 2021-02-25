@@ -1,9 +1,3 @@
-# use-page-progress
-
-Using Starter🧰 useCustomHook: React Hook Starter by a super nice huy Colby Fayock!
-
-Please sponsor his work!
-
 <p align="center">
   <a href="https://npmjs.org/package/use-page-progress">
     <img src="https://img.shields.io/npm/v/use-page-progress.svg" alt="Version" />
@@ -17,6 +11,14 @@ Please sponsor his work!
 
   <img src="https://badgen.net/bundlephobia/minzip/use-page-progress" alt="minified + gzip size" />
 </p>
+
+# use-page-progress
+
+Using Starter🧰 useCustomHook: React Hook Starter by a super nice huy Colby Fayock!
+
+Please sponsor his work!
+
+
 
 ## How to use
 

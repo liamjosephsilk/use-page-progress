@@ -8,9 +8,9 @@ Please sponsor his work!
   <a href="https://npmjs.org/package/use-page-progress">
     <img src="https://img.shields.io/npm/v/use-page-progress.svg" alt="Version" />
   </a>
-  <a href="https://npmjs.org/package/use-page-progress">
+<!--   <a href="https://npmjs.org/package/use-page-progress">
     <img src="https://img.shields.io/npm/dw/use-page-progress.svg" alt="Downloads/week" />
-  </a>
+  </a> -->
     <a href="https://github.com/liamjosephsilk/use-page-progress/blob/main/use-page-progress/package.json">
     <img src="https://img.shields.io/npm/l/use-page-progress.svg" alt="License" />
   </a>

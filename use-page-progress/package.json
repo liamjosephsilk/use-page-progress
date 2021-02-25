@@ -1,7 +1,7 @@
 {
   "name": "use-page-progress",
-  "version": "1.0.1",
-  "description": "A starter for creating a new React hook",
+  "version": "1.0.0",
+  "description": "A React hook to get the value of how much a page is scrolled",
   "author": {
     "name": "Liam Silk",
     "email": "liamjosephsilk@gmail.com",

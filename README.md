@@ -8,18 +8,13 @@ Please sponsor his work!
   <a href="https://npmjs.org/package/use-page-progress">
     <img src="https://img.shields.io/npm/v/use-page-progress.svg" alt="Version" />
   </a>
-  <!-- <a href="https://npmjs.org/package/react-use-cart">
-    <img src="https://img.shields.io/npm/dw/react-use-cart.svg" alt="Downloads/week" />
+  <a href="https://npmjs.org/package/use-page-progress">
+    <img src="https://img.shields.io/npm/dw/use-page-progress.svg" alt="Downloads/week" />
   </a>
     <a href="https://github.com/notrab/react-use-cart/blob/main/package.json">
-    <img src="https://img.shields.io/npm/l/react-use-cart.svg" alt="License" />
+    <img src="https://img.shields.io/npm/l/use-page-progress.svg" alt="License" />
   </a>
-  <a href="https://github.com/notrab/react-use-cart/network/members">
-    <img src="https://img.shields.io/github/forks/notrab/react-use-cart" alt="Forks on GitHub" />
-  </a>
-  <a href="https://github.com/notrab/react-use-cart/stargazers">
-    <img src="https://img.shields.io/github/stars/notrab/react-use-cart" alt="Forks on GitHub" />
-  </a> -->
+
   <img src="https://badgen.net/bundlephobia/minzip/use-page-progress" alt="minified + gzip size" />
 </p>
 

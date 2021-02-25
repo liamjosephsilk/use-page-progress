@@ -24,7 +24,7 @@ export default function Page() {
   const { scrollPercentage } = usePageProgress();
   return (
     <div>
-      <div style={{ position: "fixed", top: 0, left: 0, width: "0%" }}></div>
+      <div style={{ position: "fixed", top: 0, left: 0, width: `${scrollPercentage}%` }}></div>
       // Page content
     </div>
   );
